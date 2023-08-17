@@ -2,7 +2,7 @@
 ## 初期使用方法
 ### イメージの構築
 ``` 
-cd docker-laravel-vue
+cd docker-laravel-npm
 docker compose build
 ```
 ### コンテナ起動
