@@ -1,8 +1,9 @@
 # Docker-laravel9-npm
 ## 初期使用方法
 ### イメージの構築
-``` 
+```
 cd docker-laravel-npm
+mkdir src
 docker compose build
 ```
 ### コンテナ起動
