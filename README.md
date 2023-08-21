@@ -1,9 +1,29 @@
 # Docker-laravel9-npm
 ## 初期使用方法
-### イメージの構築
+### ビルド準備
 ```
 cd docker-laravel9-npm
 mkdir src
+touch .env
+```
+.envファイルに情報を記載
+```
+vi .env
+```
+以下の内容をファイルに記載する(DB系の環境変数は各自で変更する)
+```
+WEB_PORT=80
+DB_PORT=3306
+PMA_PORT=8080 
+
+# ここはどんな値でも構わない
+DB_NAME=db_name
+DB_USER=db_user
+DB_PASSWORD=db_password
+DB_ROOT_PASSWORD=root
+```
+### イメージの構築
+```
 docker compose build
 ```
 ### コンテナ起動
