@@ -72,6 +72,6 @@ docker compose up -d
 ---
 ## mysqlコンテナにアクセス
 ```
-docker compose exec mysql bash
+docker compose exec db bash
 ```
 SQlを用いてデータベースやテーブルの管理ができる
