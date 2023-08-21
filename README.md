@@ -2,7 +2,7 @@
 ## 初期使用方法
 ### イメージの構築
 ```
-cd docker-laravel-npm
+cd docker-laravel9-npm
 mkdir src
 docker compose build
 ```
