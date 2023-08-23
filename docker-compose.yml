@@ -12,6 +12,8 @@ services:
       dockerfile: ./docker/php/Dockerfile # Dockerfileがあるパスを指定
     volumes: # ローカルとdockerコンテナ間のディレクトリやファイルなどのリソースを対応付け
       - ./src/:/var/www/html # {ローカルのリソースのパス}:{dockerコンテナのリソースのパス}
+    ports: #viteの実行ポートを解放
+      - "5173:5173" 
     environment: # Laravelの.envに設定してもOK（今回はdockerコンテナを起動する際に設定）
       - DB_CONNECTION=mysql
       - DB_HOST=db # dockerコンテナのmysqlのサーバー名を指定
